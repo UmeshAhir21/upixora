@@ -78,7 +78,7 @@ export function ImageConverter({
       setPreview(reader.result as string);
     };
     reader.readAsDataURL(selectedFile);
-  }, []);
+  }, [fixedInputFormat, showToast]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
@@ -215,6 +215,7 @@ export function ImageConverter({
             </div>
             {preview && (
               <div className="mt-4 flex justify-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={preview}
                   alt="Preview"

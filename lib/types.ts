@@ -1,5 +1,5 @@
 export type InputFormat = 'jpg' | 'jpeg' | 'png' | 'webp' | 'gif' | 'bmp' | 'tiff' | 'svg';
-export type OutputFormat = 'jpg' | 'png' | 'webp' | 'avif' | 'gif' | 'bmp' | 'tiff';
+export type OutputFormat = 'jpg' | 'png' | 'webp' | 'avif' | 'gif' | 'tiff';
 
 export interface ConversionOptions {
   format: OutputFormat;

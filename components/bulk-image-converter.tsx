@@ -235,6 +235,7 @@ export function BulkImageConverter() {
             >
               <div className="flex items-start gap-4">
                 {previews[file.name] && (
+                  /* eslint-disable-next-line @next/next/no-img-element */
                   <img
                     src={previews[file.name]}
                     alt={file.name}

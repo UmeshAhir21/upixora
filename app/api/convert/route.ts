@@ -76,14 +76,14 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // Convert format
+    // Convert format - normalize jpeg to jpg
+    const normalizedFormat = format.toLowerCase() === 'jpeg' ? 'jpg' : format.toLowerCase() as OutputFormat;
     let convertedBuffer: Buffer;
-    const mimeType = getMimeType(format);
+    const mimeType = getMimeType(normalizedFormat);
     const options: sharp.OutputOptions = {};
 
-    switch (format) {
+    switch (normalizedFormat) {
       case 'jpg':
-      case 'jpeg':
         if (backgroundColor) {
           sharpInstance = sharpInstance.flatten({ background: backgroundColor });
         }
@@ -116,12 +116,6 @@ export async function POST(request: NextRequest) {
           .toBuffer();
         break;
 
-      case 'bmp':
-        convertedBuffer = await sharpInstance
-          .bmp({ ...options })
-          .toBuffer();
-        break;
-
       case 'tiff':
         convertedBuffer = await sharpInstance
           .tiff({ quality: quality || 90, ...options })
@@ -133,11 +127,11 @@ export async function POST(request: NextRequest) {
     }
 
     // Return converted image
-    return new NextResponse(convertedBuffer, {
+    return new NextResponse(convertedBuffer as unknown as BodyInit, {
       status: 200,
       headers: {
         'Content-Type': mimeType,
-        'Content-Disposition': `attachment; filename="converted.${getFileExtension(format)}"`,
+        'Content-Disposition': `attachment; filename="converted.${getFileExtension(normalizedFormat)}"`,
         'Content-Length': convertedBuffer.length.toString(),
         'X-RateLimit-Remaining': rateLimitResult.remaining.toString(),
         'X-RateLimit-Reset': rateLimitResult.resetTime.toString(),
