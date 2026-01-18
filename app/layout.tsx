@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'Upixora - Convert JPG, PNG, WEBP, AVIF & More',
     template: '%s | Upixora',
   },
-  description: 'Convert images between JPG, PNG, WEBP, AVIF, GIF, BMP, and TIFF formats. Free, fast, and secure image conversion tool with batch processing support.',
+  description: 'Convert images between JPG, PNG, WEBP, AVIF and TIFF formats. Free, fast, and secure image conversion tool with batch processing support.',
   keywords: ['image converter', 'jpg to png', 'png to jpg', 'webp converter', 'avif converter', 'image format converter'],
   authors: [{ name: 'Upixora' }],
   creator: 'Upixora',

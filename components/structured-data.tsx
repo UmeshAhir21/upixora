@@ -12,7 +12,7 @@ export function StructuredData({ type = 'WebApplication', format }: StructuredDa
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Upixora',
-    description: 'Free online image converter tool. Convert images between JPG, PNG, WEBP, AVIF, GIF, BMP, and TIFF formats.',
+    description: 'Free online image converter tool. Convert images between JPG, PNG, WEBP, AVIF and TIFF formats.',
     url: baseUrl,
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Web',

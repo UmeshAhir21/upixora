@@ -4,7 +4,7 @@ import { AdPlaceholder } from '@/components/ad-placeholder';
 
 export const metadata: Metadata = {
   title: 'Upixora - Convert JPG, PNG, WEBP, AVIF & More',
-  description: 'Convert images between JPG, PNG, WEBP, AVIF, GIF, BMP, and TIFF formats. Free, fast, and secure image conversion tool with batch processing support.',
+  description: 'Convert images between JPG, PNG, WEBP, AVIF and TIFF formats. Free, fast, and secure image conversion tool with batch processing support.',
   keywords: ['image converter', 'jpg to png', 'png to jpg', 'webp converter', 'avif converter', 'image format converter'],
   openGraph: {
     title: 'Upixora - Convert JPG, PNG, WEBP, AVIF & More',
@@ -23,7 +23,7 @@ export default function HomePage() {
           <main className="lg:col-span-8">
             <ImageConverter
               title="Upixora"
-              description="Convert your images between JPG, PNG, WEBP, AVIF, GIF, BMP, and TIFF formats instantly. No registration required."
+              description="Convert your images between JPG, PNG, WEBP, AVIF and TIFF formats instantly. No registration required."
             />
             <div className="mt-12 space-y-6">
               <section>
@@ -35,8 +35,6 @@ export default function HomePage() {
                       <li>JPG / JPEG</li>
                       <li>PNG</li>
                       <li>WEBP</li>
-                      <li>GIF</li>
-                      <li>BMP</li>
                       <li>TIFF</li>
                       <li>SVG</li>
                     </ul>
@@ -48,8 +46,6 @@ export default function HomePage() {
                       <li>PNG</li>
                       <li>WEBP</li>
                       <li>AVIF</li>
-                      <li>GIF</li>
-                      <li>BMP</li>
                       <li>TIFF</li>
                     </ul>
                   </div>

@@ -221,8 +221,8 @@ export function FileConverter({
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
       <div className="text-center space-y-2">
-        <h1 className="text-3xl font-bold">{title}</h1>
-        <p className="text-gray-600 dark:text-gray-400">
+        <h1 className="text-3xl font-bold text-white">{title}</h1>
+        <p className="text-white/90">
           {description}
         </p>
       </div>
@@ -285,7 +285,7 @@ export function FileConverter({
           {availableConversions.length > 0 ? (
             <div className="space-y-4">
               {!fixedFrom && !fixedTo && (
-                <h3 className="text-lg font-semibold">Available Conversions:</h3>
+                <h3 className="text-lg font-semibold text-white-900 dark:text-white-100">Available Conversions:</h3>
               )}
               {fixedFrom && fixedTo && (
                 <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
@@ -307,13 +307,13 @@ export function FileConverter({
                     className={cn(
                       'p-4 border-2 rounded-lg text-left transition-all duration-200',
                       isSelected || isFixed
-                        ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
-                        : 'border-gray-300 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800',
+                        ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20 text-gray-900 dark:text-gray-100'
+                        : 'border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 hover:border-blue-400 dark:hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20',
                       isFixed && 'cursor-default'
                     )}
                   >
                     <div className="flex items-center justify-between">
-                      <span className="font-medium text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-base">
                         {option.label}
                       </span>
                       {(isSelected || isFixed) && (

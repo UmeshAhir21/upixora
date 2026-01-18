@@ -37,7 +37,7 @@ export default function AboutPage() {
                 <li>Fast conversion - process images in seconds</li>
                 <li>Secure - all processing happens server-side, files are deleted immediately</li>
                 <li>No registration required - start converting right away</li>
-                <li>Multiple formats - support for JPG, PNG, WEBP, AVIF, GIF, BMP, and TIFF</li>
+                <li>Multiple formats - support for JPG, PNG, WEBP, AVIF and TIFF</li>
                 <li>Batch processing - convert multiple images at once</li>
               </ul>
               <h2>Privacy & Security</h2>

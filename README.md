@@ -4,7 +4,7 @@ A fast, SEO-optimized, Google AdSense-compliant image converter web application 
 
 ## 🚀 Features
 
-- **Multiple Format Support**: Convert between JPG, PNG, WEBP, AVIF, GIF, BMP, TIFF, and SVG
+- **Multiple Format Support**: Convert between JPG, PNG, WEBP, AVIF, TIFF, and SVG
 - **Batch Processing**: Convert multiple images simultaneously
 - **Advanced Options**: Quality adjustment, resizing, background color selection
 - **SEO Optimized**: Complete metadata, structured data, sitemap, and robots.txt

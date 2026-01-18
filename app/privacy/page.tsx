@@ -32,12 +32,20 @@ export default function PrivacyPage() {
                 uses, and protects your information when you use our image conversion service.
               </p>
 
+              <h2>Data Storage Policy</h2>
+              <p className="font-semibold text-blue-600 dark:text-blue-400">
+                <strong>We do not store your data.</strong> All files uploaded to our service, including images and documents,
+                are processed in real-time and immediately deleted after conversion. We do not save, store, or retain any
+                uploaded files, converted files, or user data on our servers. Your privacy and data security are our top priorities.
+              </p>
+
               <h2>Information We Collect</h2>
-              <h3>Images</h3>
+              <h3>Files and Documents</h3>
               <p>
-                When you upload images for conversion, we temporarily process them on our servers. Images are
-                immediately deleted after conversion is complete. We do not store, save, or retain any uploaded
-                images.
+                When you upload files (images, documents, or any other files) for conversion, we temporarily process them
+                on our servers only for the duration of the conversion process. All files are immediately and permanently
+                deleted after conversion is complete. <strong>We cannot and do not store, save, or retain any uploaded files,
+                converted files, or any user data.</strong> Your files are processed in memory and never written to disk storage.
               </p>
 
               <h3>Usage Data</h3>
